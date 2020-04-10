@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Morph</title>
+  </head>
+  <style>
+    .btn {
+      padding: 0.5rem 3rem;
+      font-size: 1.2rem;
+      background-color: transparent;
+      border: solid 1px;
+      /* border-radius: 0.5rem; */
+      cursor: pointer;
+    }
+
+    .triangle {
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+      cursor: pointer;
+      width: 10rem;
+      height: 120px;
+      font-size: 1.2rem;
+      border: black solid !important;
+      background-color: black !important;
+      color: white !important;
+    }
+
+    .circle {
+      border-radius: 50%;
+      padding: 3rem;
+    }
+
+    .square {
+      height: 150px;
+      width: 150px !important;
+      padding: 0;
+    }
+  </style>
+  <body>
+    <h1>Click Me and See what I Can Do</h1>
+
+    <button class="btn">Click Me</button>
+
+    <h2 id="para"></h2>
+
+    <script>
+      const clickBtn = document.querySelector(".btn");
+      const para = document.getElementById("para");
+      const body = document.getElementsByTagName("body");
+
+      clickBtn.addEventListener("click", randomPicker);
+
+      function randomPicker() {
+        const functs = [enlargeBtn, changeColor, shapeShift, pageColor];
+        return functs[Math.floor(Math.random() * functs.length)]();
+      }
+
+      function reset() {
+        clickBtn.style.width = "initial";
+        clickBtn.innerHTML = "Click Me";
+        clickBtn.style.backgroundColor = "transparent";
+        clickBtn.style.color = "#000";
+        clickBtn.className = "btn";
+        para.innerText = "";
+        body[0].style.backgroundColor = "#fff";
+      }
+
+      function enlargeBtn() {
+        para.innerHTML = "I can change size";
+        clickBtn.style.width = "250px";
+        clickBtn.innerHTML = "I Grew";
+        setTimeout(() => {
+          reset();
+        }, 3000);
+      }
+
+      function changeColor() {
+        para.innerHTML = "I can change color";
+        const colors = ["Black", "Red", "Blue", "Orange", "Green", "Purple"];
+
+        colors.map((color, idx) => {
+          setTimeout(() => {
+            clickBtn.style.backgroundColor = color;
+            clickBtn.style.color = "#fff";
+            clickBtn.innerHTML = `I am ${color} now`;
+          }, idx * 2000);
+        });
+
+        setTimeout(() => {
+          reset();
+        }, 14000);
+      }
+
+      function shapeShift() {
+        para.innerHTML = "I can change shape";
+        const shapes = ["triangle", "circle", "square"];
+        shapes.forEach((shape, i) => {
+          setTimeout(() => {
+            clickBtn.className = `btn ${shape}`;
+            clickBtn.innerHTML = `${shape}`;
+          }, i * 2000);
+        });
+
+        setTimeout(() => {
+          reset();
+        }, 8000);
+      }
+
+      function pageColor() {
+        para.innerHTML = "I can change the page color";
+        const colors = ["red", "blue", "green"];
+
+        colors.map((color, idx) => {
+          setTimeout(() => {
+            body[0].style.backgroundColor = color;
+          }, idx * 2000);
+        });
+
+        setTimeout(() => {
+          reset();
+        }, 6000);
+      }
+    </script>
+  </body>
+</html>
