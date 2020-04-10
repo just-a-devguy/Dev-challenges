@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Challenge</title>
+
+    <style>
+      #box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Change My Color</h1>
+
+    <div id="box"></div>
+
+    <input type="text" name="color" id="color" />
+
+    <script>
+      const box = document.getElementById("box");
+      const colorInput = document.getElementById("color");
+
+      colorInput.addEventListener("keyup", changeColor);
+
+      function changeColor(e) {
+        e.preventDefault();
+        box.style.backgroundColor = e.target.value;
+      }
+    </script>
+  </body>
+</html>
