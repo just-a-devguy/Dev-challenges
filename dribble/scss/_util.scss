@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+
+$main-color: #ea4c89;
+$hover-color: #f082ac;
+$grayish-color: #6e6d7a;
+$light-color: #f9f8fd;
+$dark-color: #333;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+.cta {
+  // border: solid black;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  &__main {
+    @extend .cta;
+    background-color: $main-color;
+    color: $light-color;
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+  &__light {
+    @extend .cta;
+    color: $grayish-color;
+  }
+}
