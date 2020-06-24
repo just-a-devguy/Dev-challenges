@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShareCard</title>
+
+    <link rel="stylesheet" href="dist/css/style.css" />
+  </head>
+  <body>
+    <section class="search-card">
+      <div class="search-card__header">
+        <button class="search-card__close">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <h1 class="search-card__title">
+          Share ideas with your friends
+        </h1>
+      </div>
+
+      <div class="search-card__form">
+        <ion-icon id="search-icon" name="search-outline"></ion-icon>
+
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Search by name or email"
+        />
+      </div>
+
+      <div class="search-card__suggestions">
+        <h2 class="search-card__suggestions-header">suggested</h2>
+
+        <div class="search-card__suggestions-profiles">
+          <div class="search-card__suggestions-profile">
+            <img
+              src="man.jpg"
+              alt=""
+              class="search-card__suggestions-profile__avatar"
+            />
+            <div class="search-card__suggestions-profile__details">
+              <h3>Stanley Keller</h3>
+              <p>@stanK</p>
+            </div>
+          </div>
+
+          <div class="search-card__suggestions-profile">
+            <img
+              src="woman.png"
+              alt=""
+              class="search-card__suggestions-profile__avatar"
+            />
+            <div class="search-card__suggestions-profile__details">
+              <h3>Bertie Greer</h3>
+              <p>@bertieGreer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/ionicons@5.1.0/dist/ionicons.js"></script>
+  </body>
+</html>
