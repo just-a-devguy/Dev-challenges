@@ -1,0 +1,125 @@
+:root {
+  --light-color: #f2f3fb;
+  --dark-color: #343f68;
+  --neutral-color: #7e90f8;
+  --dark-red: #fc7474;
+  --mild-orange: #fcab74;
+  --light-red: #fc8c94;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: var(--light-color);
+}
+
+.shadow {
+  box-shadow: -4px -4px 4px 2px rgba(255, 255, 255, 0.87),
+    4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+}
+
+#component {
+  width: 70%;
+  margin: 8rem auto;
+}
+
+.wallet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.wallet-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 0.7rem;
+  width: 30%;
+}
+
+.wallet-card__icon {
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-color);
+}
+
+.wallet-card:first-of-type .wallet-card__icon {
+  background-color: var(--dark-red);
+}
+
+.wallet-card:nth-of-type(2) .wallet-card__icon {
+  background-color: var(--mild-orange);
+}
+
+.wallet-card:nth-of-type(3) .wallet-card__icon {
+  background-color: var(--neutral-color);
+}
+
+.wallet-card__label {
+  margin-top: 0.7rem;
+}
+
+.wallet-card__label p {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.message {
+  padding: 1rem;
+  box-shadow: inset -4px -4px 25px 0px rgba(255, 255, 255, 0.55),
+    inset 5px 5px 15px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+.message p {
+  font-size: 0.8rem;
+  width: 70%;
+  /* border: solid red; */
+  line-height: 1.5;
+  margin: auto;
+}
+
+.message p span {
+  color: var(--neutral-color);
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 45%;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.btn-main {
+  background-color: var(--neutral-color);
+  color: var(--light-color);
+}
+
+.btn-light {
+  background-color: var(--light-color);
+  color: var(--neutral-color);
+}
