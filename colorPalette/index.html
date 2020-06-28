@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Palette</title>
+
+    <style>
+      body {
+        background-color: #a3b2c2;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .colors {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem 0 4rem 0;
+      }
+
+      .color-card {
+        margin: 2rem;
+        border-radius: 0.5rem;
+        border: 10px solid #fff;
+        background-color: #fff;
+        cursor: pointer;
+      }
+
+      .color {
+        height: 180px;
+        width: 130px;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+      }
+
+      .trigger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .btn {
+        text-transform: uppercase;
+        border: none;
+        background-color: #4a3799;
+        padding: 1rem;
+        border-radius: 0.3rem;
+        color: #f2f3fb;
+        font-weight: 900;
+        font-size: 0.9rem;
+        letter-spacing: 0.09rem;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #7e6cca;
+      }
+
+      @media screen and (max-width: 600px) {
+        .colors {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .color {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="colors">
+      <div class="color-card">
+        <div class="color"></div>
+        <div class="color-name">
+          <p></p>
+        </div>
+      </div>
+
+      <div class="color-card">
+        <div class="color"></div>
+        <div class="color-name">
+          <p></p>
+        </div>
+      </div>
+
+      <div class="color-card">
+        <div class="color"></div>
+        <div class="color-name">
+          <p></p>
+        </div>
+      </div>
+
+      <div class="color-card">
+        <div class="color"></div>
+        <div class="color-name">
+          <p></p>
+        </div>
+      </div>
+
+      <div class="color-card">
+        <div class="color"></div>
+        <div class="color-name">
+          <p></p>
+        </div>
+      </div>
+
+      <div class="color-card">
+        <div class="color"></div>
+        <div class="color-name">
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trigger">
+      <button class="btn">generate palette</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
