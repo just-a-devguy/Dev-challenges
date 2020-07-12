@@ -13,8 +13,8 @@
     4. Dribble
       Basic recreation of the dribble landing page
     5. ShareCard
-      UI Design Daily Share Card Component [Design Link] (https://uidesigndaily.com/posts/sketch-share-card-modal-pop-up-day-1115)
+      UI Design Daily Share Card Component [Design Link](https://uidesigndaily.com/posts/sketch-share-card-modal-pop-up-day-1115)
     6. Neumorphism
-      First neumorphic design attempt [Design Link] (https://uidesigndaily.com/posts/sketch-neumorphic-ui-components-tab-button-day-1071)
+      First neumorphic design attempt [Design Link](https://uidesigndaily.com/posts/sketch-neumorphic-ui-components-tab-button-day-1071)
     7. Read-and-Edit
-      UI Design Daily Read & Edit with functionality [Design Link] (https://uidesigndaily.com/posts/sketch-read-&-edit-states-form-panel-day-1021)
+      UI Design Daily Read & Edit with functionality [Design Link](https://uidesigndaily.com/posts/sketch-read-&-edit-states-form-panel-day-1021)
