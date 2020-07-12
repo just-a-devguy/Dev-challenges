@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read & Write | Edit State</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <section class="read">
+      <div class="read-info">
+        <div class="read-card">
+          <div class="read-card__header">
+            <ion-icon name="home-outline"></ion-icon>
+          </div>
+          <div class="read-card__body">
+            <p>type of dwelling</p>
+            <h3 id="type">detached</h3>
+          </div>
+        </div>
+
+        <div class="read-card">
+          <div class="read-card__header">
+            <ion-icon name="crop-outline"></ion-icon>
+          </div>
+          <div class="read-card__body">
+            <p>living area</p>
+            <h3 id="area">147 m<sup>2</sup></h3>
+          </div>
+        </div>
+
+        <div class="read-card">
+          <div class="read-card__header">
+            <ion-icon name="cash-outline"></ion-icon>
+          </div>
+          <div class="read-card__body">
+            <p>considered to be sold within</p>
+            <h3 id="timeframe">1 year</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-edit">
+        <button>
+          <ion-icon name="pencil-outline"></ion-icon>
+        </button>
+      </div>
+    </section>
+
+    <section class="edit">
+      <div class="edit-details">
+        <div class="edit-header">
+          <h1 class="edit-header__title">Edit</h1>
+          <p class="edit-header__subtitle">
+            Enter details and let other users know when you are considering
+            selling the property
+          </p>
+        </div>
+
+        <div class="edit-body">
+          <div class="edit-item">
+            <div class="edit-item__icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </div>
+            <p>type of dwelling</p>
+            <div class="edit-item__select">
+              <div class="edit-item__select-default">
+                <p>detached</p>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+              <div class="edit-item__select-options">
+                <p class="edit-item__select-option">detached</p>
+                <p class="edit-item__select-option">apartment</p>
+                <p class="edit-item__select-option">house</p>
+                <p class="edit-item__select-option">dorm</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="edit-item">
+            <div class="edit-item__icon">
+              <ion-icon name="crop-outline"></ion-icon>
+            </div>
+            <p>living area</p>
+            <div class="edit-item__input">
+              <input
+                type="number"
+                name="living-area-number"
+                id="living-area-number"
+              />
+              <span>m<sup>2</sup> </span>
+            </div>
+          </div>
+
+          <div class="edit-item">
+            <div class="edit-item__icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </div>
+            <p>considered to be sold within</p>
+            <div class="edit-item__select">
+              <div class="edit-item__select-default">
+                <p>1 year</p>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+              <div class="edit-item__select-options">
+                <p class="edit-item__select-option">1 year</p>
+                <p class="edit-item__select-option">2 years</p>
+                <p class="edit-item__select-option">3 years</p>
+                <p class="edit-item__select-option">4 years</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edit-ctas">
+          <button class="cta cta__light">cancel</button>
+          <button class="cta cta__main">save</button>
+        </div>
+      </div>
+
+      <div class="edit-close">
+        <button>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+    </section>
+
+    <!-- <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script> -->
+    <script src="app.js"></script>
+  </body>
+</html>

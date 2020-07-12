@@ -1,0 +1,255 @@
+:root {
+  --dark-color: #0c0c1c;
+  --light-color: #f2f9fb;
+  --main-color: #24a4a4;
+  --light-gray: #969dac;
+  --mid-gray: #7c7c89;
+  --dark-gray: #7c848c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: var(--light-gray);
+}
+
+/* Util Class */
+.is-open {
+  display: block !important;
+}
+
+.read {
+  /* border: solid red; */
+  position: relative;
+}
+
+.rotate {
+  transform: rotateX(180deg);
+}
+
+.read-info {
+  /* border: solid red; */
+  width: 80%;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--light-color);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 0.3rem;
+}
+
+.read-card {
+  /* border: solid black; */
+  text-align: center;
+  margin: 0 1rem;
+  padding: 2rem;
+}
+
+.read-card__body p {
+  text-transform: uppercase;
+  color: var(--mid-gray);
+}
+
+.read-card__body h3 {
+  text-transform: capitalize;
+}
+
+.card-edit {
+  position: absolute;
+  top: 90%;
+  right: 18%;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.card-edit button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.card-edit ion-icon {
+  font-size: 2rem;
+  color: var(--light-color);
+}
+
+.edit {
+  /* border: solid red; */
+  position: relative;
+  margin-top: 5rem;
+  display: none;
+}
+
+.edit-details {
+  background-color: var(--dark-color);
+  text-align: center;
+  color: var(--light-color);
+  /* border: solid green; */
+  width: 80%;
+  margin: 2rem auto;
+  border-radius: 0.3rem;
+  padding: 3rem;
+}
+
+.edit-header {
+  margin: 1.3rem 0;
+}
+
+.edit-body {
+  /* border: solid white; */
+  display: flex;
+  justify-content: space-between;
+  height: 190px;
+  /* align-items: center; */
+}
+
+/* .edit-item {
+  border: solid pink;
+} */
+
+.edit-item p {
+  text-transform: uppercase;
+}
+
+.edit-item > p {
+  margin: 0.5rem 0;
+}
+
+.edit-item__select {
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.edit-item__select-default {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* cursor: pointer; */
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+  cursor: pointer;
+}
+
+/* .edit-item__select-default ion-icon {
+  transform: rotate(180deg);
+} */
+
+.edit-item__select-options {
+  margin-top: 0.2rem;
+  border-radius: 0.1rem;
+  /* opacity: 0; */
+  /* pointer-events: none; */
+  display: none;
+  /* height: 0; */
+}
+
+.edit-item__select-options p {
+  padding: 0.3rem 0;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  cursor: pointer;
+}
+
+.edit-item__select-options p:hover {
+  background-color: var(--dark-gray);
+  color: var(--light-color);
+}
+
+/* 
+.edit-item__select-options p {
+} */
+
+.edit-item__input {
+  position: relative;
+}
+
+input[type="number"] {
+  margin: 0;
+  /* appearance: textfield; */
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  padding-right: 2rem;
+  font-family: inherit;
+  border: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]:focus {
+  outline: none;
+}
+
+input[type="number"] + span {
+  color: var(--dark-gray);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 1%;
+  top: 50%;
+}
+
+.edit-ctas {
+  margin: 2rem 0;
+}
+
+.cta {
+  text-transform: capitalize;
+  padding: 1rem 3rem;
+  border-radius: 0.2rem;
+  border-width: thin;
+  cursor: pointer;
+}
+
+.cta__light {
+  border-color: var(--light-gray);
+  background-color: transparent;
+  color: var(--light-gray);
+}
+
+.cta:hover {
+  transform: scale(0.9);
+}
+
+.cta__main {
+  background-color: var(--main-color);
+  border-color: transparent;
+  color: var(--light-color);
+  font-weight: 600;
+}
+
+.edit-close {
+  position: absolute;
+  top: 92%;
+  right: 18%;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: var(--light-color);
+  cursor: pointer;
+}
+
+.edit-close button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-close ion-icon {
+  font-size: 2rem;
+  color: var(--dark-color);
+}
